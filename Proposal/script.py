@@ -47,7 +47,7 @@ f"""
 ![Figure 1: Example figure]({Year}{semester2code[Semester.lower()]}_{data['Version']}.png)
 <br>
 <br>
-*Figure 1: Caption*
+*Figure 1: The image depict a diverse range of Indonesian people from different walks of life in both rural and urban settings, symbolizing unity and support*
 
 
 ## 1 Objective:  
