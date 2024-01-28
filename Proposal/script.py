@@ -44,12 +44,16 @@ f"""
 #### The George Washington University, Washington DC  
 #### Data Science Program
 
+![Figure 1: Example figure]({Year}{semester2code[Semester.lower()]}_{data['Version']}.png)
+<br>
+<br>
+*Figure 1: Caption*
+
 
 ## 1 Objective:  
 {data['Objective']}
 
-![Figure 1: Example figure]({Year}{semester2code[Semester.lower()]}_{data['Version']}.png)
-*Figure 1: Caption*
+
 
 ## 2 Dataset:  
 {data['Dataset']}

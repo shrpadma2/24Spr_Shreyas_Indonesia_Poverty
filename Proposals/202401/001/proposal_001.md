@@ -1,34 +1,20 @@
-#%%
-import json
-import os
-import shutil
 
-#%%
+# Capstone Proposal
+## Indonesia Poverty and Equity Program
+### Proposed by: William Seitz
+#### Email: wseitz@worldbank.org
+#### Advisor: Edwin Lo
+#### The George Washington University, Washington DC  
+#### Data Science Program
 
-def save_to_json(data, output_file_path):
-    with open(output_file_path, 'w') as output_file:
-        json.dump(data, output_file, indent=2)
+![Figure 1: Example figure](202401_001.png)
+<br>
+<br>
+*Figure 1: Caption*
 
-semester2code = { "sp":"01", "spr":"01", "spring":"01", "su":"02", "sum":"02", "summer":"02", "fa":"03", "fall":"03"}
-thisfilename = os.path.basename(__file__) # should match _ver for version, ideally 3-digit string starting as "000", up to "999"
 
-data_to_save = \
-    {
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Version":
-            """001""",
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Year":
-            """2024""",
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Semester":
-            """Spring""",
-        # -----------------------------------------------------------------------------------------------------------------------
-        "project_name":
-            """Indonesia Poverty and Equity Program""",
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Objective":
-            """ 
+## 1 Objective:  
+ 
             The primary objective of this project is to leverage various datasets, including AIS (shipping transponder) data, 
             household surveys, and census data, to gain comprehensive insights into the spatial transformation and connectivity 
             within Indonesia. By analyzing these datasets, the project aims to identify key patterns, challenges, and opportunities
@@ -37,10 +23,12 @@ data_to_save = \
             improved connectivity and equitable growth across different regions of Indonesia. This analysis will ultimately contribute 
             to a better understanding of how spatial transformation influences poverty reduction and equitable development, thereby 
             supporting the broader objective of improving the living standards and opportunities for the people of Indonesia.
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Dataset":
-            """
+            
+
+
+
+## 2 Dataset:  
+
             William Hutchins Seitz has provided the data, and the subsequent details offer an explanation of the shared data.
 
             The Indonesia EAP project encompasses a rich array of socio-economic, health, and educational data, spanning multiple administrative 
@@ -49,16 +37,16 @@ data_to_save = \
             demographic trends, healthcare and educational infrastructure, and socio-economic conditions. The depth and breadth of the data provide a unique opportunity
             for in-depth analysis, critical for informed policy-making, targeted developmental initiatives, and comprehensive academic research, aimed at understanding
             and addressing Indonesia's regional disparities and enhancing welfare outcomes.
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Rationale":
-            """
+            
+
+## 3 Rationale:  
+
             The Indonesia EAP Project aims to improve welfare outcomes by using its data to identify and tackle regional disparities in healthcare, education, and socio-economic conditions.
             This targeted approach is intended to reduce inequalities and enhance the overall quality of life across Indonesia, leading to more equitable and inclusive development.
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Approach":
-            """
+            
+
+## 4 Approach:  
+
             Our team plans to tackle this capstone project through a series of coordinated steps:
 
             1. Gain a thorough understanding of the data and carry out the necessary preprocessing.
@@ -66,10 +54,10 @@ data_to_save = \
             3. We will then integrate satellite data with survey data and proceed with the required statistical modeling.
             4. The team will engage in visualization and mapping to create graphical representations of our findings.
             5. Lastly, we will validate our findings to ensure the reliability and robustness of our models.
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Timeline":
-            """
+            
+
+## 5 Timeline:  
+
             This a rough time line for this project:  
 
             - (2 Weeks) Data Pre-Processing.  
@@ -81,29 +69,20 @@ data_to_save = \
             - (1 Weeks) Validation  
             - (1 Weeks) Writing Up a paper and submission
             - (1 Weeks) Final Presentation  
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Expected Number Students":
-            """
+            
+
+## 6 Expected Number Students:  
+
             2 People 
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Possible Issues":
-            """
+            
+
+## 7 Possible Issues:  
+
            The challenge involves comprehending the survey data, preparing and processing this data, and then integrating it effectively with satellite and GIS data.
-            """,
-        # -----------------------------------------------------------------------------------------------------------------------
-        "Proposed by": "William Seitz",
-        "Proposed by email": "wseitz@worldbank.org",
-        "instructor": "Edwin Lo",
-        "instructor_email": "edwinlo@email.gwu.edu",
-        "github_repo": "https://github.com/shrpadma2/DATS_6501_10_Capstone_Project",
-        # -----------------------------------------------------------------------------------------------------------------------
-    }
-os.makedirs(
-    os.getcwd() + f'{os.sep}Proposals{os.sep}{data_to_save["Year"]}{semester2code[data_to_save["Semester"].lower()]}{os.sep}{data_to_save["Version"]}',
-    exist_ok=True)
-output_file_path = os.getcwd() + f'{os.sep}Proposals{os.sep}{data_to_save["Year"]}{semester2code[data_to_save["Semester"].lower()]}{os.sep}{data_to_save["Version"]}{os.sep}'
-save_to_json(data_to_save, output_file_path + "input.json")
-shutil.copy(thisfilename, output_file_path)
-print(f"Data saved to {output_file_path}")
+            
+
+
+## Contact
+- Author: Edwin Lo
+- Email: [edwinlo@email.gwu.edu](Eamil)
+- GitHub: [https://github.com/shrpadma2/DATS_6501_10_Capstone_Project](Git Hub rep)
